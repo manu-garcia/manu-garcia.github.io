@@ -1,12 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .canvas-container {
+        width: 100%;
+        text-align: center;
+      }
+      canvas {
+        border: 1px solid #DDD;
+      }
+    </style>
+  </head>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manu Garcia</title>
-</head>
-<body>
-  <a href="https://react-pwa-from-scratch.manugarciamartin.com">React PWA from scratch</a>
-</body>
+  <body style="display: none">
+    
+    <div class="canvas-container">
+      <canvas id="panorama-canvas" width="800" height="200">
+        Your browser does not support canvas!
+      </canvas>
+    </div>
+
+    <script src="./panorama/panorama.js"></script>
+    <script src="./panorama/sprite.js"></script>
+    <script src="./panorama/ground.js"></script>
+    <script>
+
+      window.addEventListener("load", function () {
+        
+        var panorama = new Panorama("panorama-canvas");
+        panorama.init();
+
+      }, false);
+
+    </script>
+
+  </body>
+
 </html>
