@@ -1,0 +1,37 @@
+{
+  "name": "manugarcia",
+  "version": "0.0.1",
+  "description": "Manu Garcia personal web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack-dev-server --hot --inline",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manu-garcia/manu-garcia.github.io.git"
+  },
+  "keywords": [
+    "Manu",
+    "Garcia",
+    "personal",
+    "web",
+    "site"
+  ],
+  "author": "Manu Garcia <garcia.martin.manu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manu-garcia/manu-garcia.github.io/issues"
+  },
+  "homepage": "https://github.com/manu-garcia/manu-garcia.github.io#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "text-loader": "0.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
